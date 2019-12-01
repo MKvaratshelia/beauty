@@ -442,12 +442,12 @@
 }
 .shops__image_mail {
   max-width: 140px;
-  height: 106px;
+  min-height: 106px;
   margin: 0 auto;
 }
 .shops__image_auto {
   max-width: 188px;
-  height: 100px;
+  min-height: 100px;
   margin: 0 auto;
 }
 .shops__button {
