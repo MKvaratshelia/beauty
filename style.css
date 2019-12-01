@@ -508,8 +508,9 @@
   width: calc(1110 / 1280 * 100%);
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 217px);
   grid-column-gap: 30px;
+  justify-content: center;
 }
 .footer__category-item {
   display: flex;
@@ -541,15 +542,21 @@
   line-height: 28px;
   margin: 55px 0 60px;
 }
+@media screen and (max-width: 375px) {
+  .footer__category-list {
+    margin: 20px 0 30px;
+  }
+}
 .footer__category-list-item {
   color: #828282;
 }
 
 .footer__contacts {
-  height: 120px;
+  min-height: 120px;
   max-width: calc(1110 / 1280 * 100%);
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   border-top: 1px solid #efefef;
