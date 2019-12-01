@@ -401,6 +401,7 @@
   background: #f13c6e;
   height: 212px;
   align-items: center;
+  padding-left: 5px;
 }
 .shops__item {
   margin: 0 auto;
@@ -480,9 +481,9 @@
   margin: 0 auto 80px;
 }
 .brands {
-  height: 357px;
+  min-height: 357px;
   background-color: #fff;
-  width: 1110px;
+  max-width: 1110px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,9 +491,10 @@
 .brands__items {
   width: calc(990 / 1110 * 100%);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, 149px);
   grid-column-gap: calc(130 / 990 * 100%);
   grid-row-gap: 70px;
+  justify-content: center;
 }
 
 /* footer */
